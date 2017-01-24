@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Subdroid</string>
+    
+    <string name="default_url"></string>
+    <string name="default_path"></string>
+    <string name="url_hint">BaseURL like: http://sub.domain.com/svn</string>
+    <string name="path_hint">Path like: /trunk</string>
+    
+    <string name="search_label">Searchlabel</string>
+    <string name="search_hint">Revision, Author, Message, Filename</string>
+    <string name="search_for">Search for: {0}</string>
+    <string name="no_search_results">No Search results for: {0}</string>
+    
+    <!--  Notification Strings -->
+    <string name="notification_new_revisions">New Revisions:</string>
+    <string name="notification_new_revisions_info">New Revs for Repo {0}</string>
+    <string name="notification_new_revisions_text">{0}: remote: {1}; local: {2}</string>
+    <string name="notification_service_running_info">Update service running</string>
+    <string name="notification_service_running_text">Disable by pressing menu key - Stop update service</string>
+    <string name="notification_error">{0}: Error while updating</string>
+    <string name="notification_regex_error">Error: Could not compile regex!</string>
+    
+    <!--  Menu Strings within Revisions -->
+    <string name="revisions_menu_demo">Create Demo Data</string>
+    <string name="revisions_menu_refresh">Refresh Log</string>
+    <string name="revisions_menu_more_revisions">Retrieve more Revisions</string>
+    <string name="revisions_menu_clear">Clear</string>
+    
+    <!--  Menu Strings for Repository longpress -->
+    <string name="repository_longpress_log">View Log</string>
+    <string name="repository_longpress_browse">Browse repository</string>
+  	<string name="repository_longpress_copy">Copy repository settings</string>
+    <string name="repository_longpress_modify">Modify repository</string>
+    <string name="repository_longpress_delete">Delete repository</string>
+    
+    <!--  Menu Strings for Repository menu -->
+    <string name="repository_menu_add">Add repository</string>
+    <string name="repository_menu_prefs">Preferences</string>
+    <string name="repository_menu_search">Search</string>
+    <string name="repository_menu_help">Help</string>
+	<string name="repository_menu_start_check_update_service">Start update service</string>
+	<string name="repository_menu_stop_check_update_service">Stop update service</string>
+    
+    <!-- Modify Repository Activity -->
+    <string name="name">Name</string>
+    <string name="url">Base URL</string>
+    <string name="path">Path</string>
+    <string name="revisions_limit"># of revisions</string> 
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="remember_pass">Remember Pwd</string>
+    <string name="notification">Notification</string>
+    <string name="ignoreSSL">Ignore SSL certs</string>
+    <string name="retrieveChangedPaths">Show changes</string>
+    <string name="regex_info">When these regexes match on all new revisions the notification will be suppressed.</string>
+    <string name="regex_author">Regex Author</string>
+    <string name="regex_message">Regex Message</string>
+    
+    <string name="revision"></string>
+    
+    <!-- Messages -->
+    <string name="retrieving_revisions">Retrieving revisions and parsing. This might take up to a minute. Don\'t kill the process - it will recover.</string>
+    <string name="working">Working...</string>
+    <string name="no_revisions">No revisions. Press menu key to refresh.</string>
+    <string name="no_repositories">No repositories. Press menu key to add one.</string>
+	<string name="paid_notice">Update check service currently only available in paid/donate version.</string>
+	<string name="no_sdcard_found">No SDcard found!</string>
+	<string name="backup_in_progress">Backup in progress...</string>
+	<string name="backup_complete">Backup to /sdcard/subdroid/backup complete!</string>
+	<string name="backup_failed">Backup not complete:</string>
+	<string name="restore_in_progress">Restore in progress...</string>
+	<string name="backup_file_not_found">Backup file not found!</string>
+	<string name="backup_not_readable">Backup file could not be read.</string>
+	<string name="import_ok">Import successful.</string>
+	<string name="import_failed">Import failed:</string>
+		
+	<string name="downloading_file">Downloading File</string>
+	<string name="download_complete">Download complete</string>
+	<string name="download_complete_activity_not_found">Download complete but failed to open file, unknown type.</string>
+	<string name="file_exists">File already exists</string>
+	<string name="overwrite">Overwrite</string>
+	<string name="cancel">Cancel</string>
+	<string name="press_one_more_to_exit">Press Back once more to exit.</string>
+    
+    <!-- Changedpaths options -->
+	<string name="choose_action">Choose Action</string>
+	<string name="download_head">Download Head</string>
+	<string name="download_revision">Download revision</string>
+	<string name="open_head">Open Head</string>
+	<string name="open_revision">Open revision</string>
+    <string name="navigate">Navigate there</string>
+    
+    <!-- Preferences -->
+    <string name="pref_category_update_service">Update Service</string>
+    <string name="pref_category_downloads">Downloads</string>
+    <string name="pref_category_browse">Browsing</string>
+    <string name="pref_category_theme">Theme</string>
+    <string name="pref_category_backup">Backup / Restore</string>
+    
+    <string name="notification_show_lights">Flash status light</string>
+    <string name="notification_show_lights_text">Flashes the Led status light</string>
+    <string name="notification_default_sound">Play notification sound</string>
+    <string name="notification_default_sound_text">Plays the default notification sound</string>
+    <string name="notification_vibrate">Vibrate</string>
+    <string name="notification_vibrate_text">Vibrates the phone</string>
+    <string name="interval">Update interval</string>
+    <string name="interval_text">Time between update checks</string>
+    <string name="prefs_battery_friendly">Battery friendly service</string>
+    <string name="prefs_battery_friendly_text">Schedule service to run at inexact times and only when awake. Will only work for first 5 values set for update interval</string>
+    <string name="prefs_show_service_notification">Service Notification</string>
+    <string name="prefs_show_service_notification_text">Enable to show a notification to remind you the service is running.</string>
+    <string name="open_after_download">Open Files</string>
+    <string name="open_after_download_text">Open files after they finished downloading</string>
+    <string name="fallback_to_text_mimetype">Fallback to text</string>
+    <string name="fallback_to_text_mimetype_text">Use text mimetype when opening files that do not match any other application</string>
+    <string name="back_button_navigate">Back button</string>
+    <string name="back_button_navigate_text">Navigate Up with the Back button</string>
+    <string name="theme">Theme</string>
+    <string name="theme_text">Changes will be applied after restarting the application</string>
+    <string name="prefs_backup">Backup</string>
+    <string name="prefs_backup_text">Data will be exported unencrypted! Old export will be overwritten!</string>
+    <string name="prefs_restore">Restore</string>
+    <string name="prefs_restore_text">Current data will be overwritten!</string>
+    
+    <string name="confirm">Confirm</string>
+    <string name="confirmDelete">Are you sure you want to delete this repository?</string>
+    <string name="confirmIgnoreSSL">Turning off SSL certificates may encourage man in the middle attacks. Only check this if you use a self-signed certificate.</string>
+    
+    <!-- Help / About -->
+    <string name="help">Help</string>
+    <string name="close">Close</string>
+    <string name="feedback">Feedback</string>
+    <string name="help_message">
+Subdroid 0.9.5
+
+\n\n~ About ~
+\n\nSubdroid is a simple frontend to look at SVN-Repositories in your Android device. Currently it only supports view-access to SVN repos and is still in a very early development phase.
+\n\n~ General Help ~
+\n\n0. General
+\nSubroid only works with mod_dav_svn subversion servers. the svn:// protocol is not supported.
+\n\n1. Repositories
+\nUse Menu Button to add a new repository.
+\nProvide the necessary URL and make settings for desired number of revisions that should be downloaded at once.
+\nIf necessary provide the username and password. Please note, that currently self-signed (non pre-installed certificates) are only supported by completely disabling SSL-Certificate checks (any certificate would be accepted!).
+\nYou can choose if you want to retrieve the changed paths for each revision or only the log messages.
+\nChoose if this repository should be included in the background update check service (currently only available in donate version).
+\nLongpress on a repository name to modify or delete it.
+\nNEW: Longpress on a repository name and choose browse to start browsing the repository.
+
+\n\n2.  Revisions View (after clicking a repository name from the list)
+\nUse Menu Button to refresh the log (retrieve only new revisions), retrieve more revisions (older ones) or clear it (deletes all revisions).
+\nBy clicking on a changed path you can choose to download or open a revision of this file. If you choose to download it, it will be saved under /sdcard/subdroid/[REPOSITORYNAME][REPOSITORY_DATABASE_ID]/[FILENAME]. You can specifiy within the preferences if you want to open downloaded files right after the download and if no application matches the downlodaed mimetype the text mimetype should be used as a fallback. You might also use a FileManager like Astro to navigate there and open / edit it.
+
+\n\n3. Preferences
+\nHere you can set global preferences like how often the background updateCheck should be executed and what kind of notification (sound, flashing led, vibrating) should be fired.
+
+\n\n4. Start update service
+\nStarts the background service that periodically checks for modifications of the repositories and notifies you when new revisions are committed.
+\nOnce started you can also stop it again from here.
+
+\n\n~ Donate / Paid Version ~
+\nContains no ads and has some enhanced features. Features from the donated version will slowly move to the free version while new features are added to the donated version.
+\nCurrent donated version includes the possibility to start a background service that periodically checks for modifications to the svn repository. 
+    
+\n\n~ Credits ~
+\nThe SVN action icons are part of the TortoiseSVN project, it is a great client for svn even if you already use an integrated svn client in your IDE, see http://tortoisesvn.net
+
+\n\n~ Changelog ~
+\n
+\n0.9.6 - 2012.04.15
+\n * Fixed bug when browsing directories containing "."s (thx Enrico)
+\n * Added Holo Layout
+\n
+\n0.9.5 - 2012.02.05
+\n * ScrollPosition is now saved when downloading a file / changing orientation.
+\n * Improved Exceptions a bit 
+\n
+\n0.9.4 - 2012.01.29
+\n * Whoa long time no updates, no spare time :/
+\n * Should be working now again with code.google.com repos. Google decided to send a "405, method not allowed" to all clients not containing "SVN" in the user-agent. How i found out? By tediously reverse engineering and setting all headers tortoise sets on the HTTP PROPFIND requests.
+\n * Changed typeface to sans, because someone called me INSANE for using serif. Did I study typography - NO. Do I have taste - Apperently not? Do i care - Not really. Did I change it - Sure. 
+\n
+\n0.9.3 - 2011.06.26
+\n * added export/import features
+\n * new theme with bigger revision texts to make it easier to click on them
+\n * set new theme to default
+\n
+\n0.9.2 - 2011.04.10
+\n * fixed crash on Xoom (Honeycomb handles managed cursors differently..)
+\n * fixed, or at least alleviated a crash on orientation change
+\n * added red error icon when notification service encounters an error (i.e. host unreachable)
+\n
+\n0.9.1 - 2011.01.16
+\n * Added search button in the menu to allow devices that do not have an dedicated search button to search.
+\n * Improved search result page.
+\n * Improved notification service, will now use RTC_WAKEUP instead of ELAPSED_REALTIME when not in battery friendly mode.
+\n
+\n0.9.0 - 2011.01.08
+\n * Added simple search capabilities. Use the search-key on your device to search for author, commit message, or revision-id in all repositories.
+\n * some minor improvements regarding text-input
+\n
+\n0.8.9 - 2010.10.31
+\n * Added copy repo capability
+\n * Added regex for author / message that suppresses notification if it matches all new revisions when checking in update service
+\n * Added SmallScreenSupport and MidScreenSupport - thought those would be enabled by default (might depend on minSDK param instead of actual sdk used in phone?)
+\n * Improved update service notification onclick action
+\n
+\n0.8.8 - 2010.10.16
+\n * Added Themes - that was a lot harder as i thought. Friggin background issues!
+\n * Added LargeScreenSupport, improved messages and icons
+\n
+\n0.8.7 - 2010.07.10
+\n * Bugfix for self-signed SSL certificates and froyo 2.2 (thx Todd for reporting this)
+\n
+\n0.8.6 - 2010.07.03
+\n * Repositories can now be browsed! use longpress - browse repository
+\n * Fixed a bug with whitespace in urls
+\n * Fixed bug that showed changed paths for wrong revision when scrolling.
+\n
+\n0.8.5 - 2010.05.24
+\n * Move Application to sdcard is supported
+\n * Downloaded files are opened (if content-type / mimetype is recognized)
+\n * Opening after downloading / falling back to text-mimetype configurable through preferences
+\n
+\n0.8.4 - 2010.05.15
+\n * Linked changesets can now be downloaded or openend. The revision that should be opened/downloaded can be chosen. Files will be saved under /sdcard/subdroid/..
+\n * Linked changesets now also available in free version, but only opening head revision in browser is available.
+\n * Password can now be chosen to not be safed. Will prompt for it on update; ServiceUpdate not possible (will be skipped) for these repos.
+\n
+\n0.8.3 - 2010.05.09
+\n * Increased font-size of revision list. Why has no one ever told me it turns out to be so friggin small on real devices?
+\n * Preference introduced that allows to specify whether the head-revision of a file should be opened, or the version of the file that belongs to this changeset / revision (currently donate only).
+\n * Changed name of paid / pro / donated version, to distinguish it from the free version when both are installed on one device.
+\n
+\n0.8.2 - 2010.04.23
+\n * revisions should now always be displayed in the correct order, thanks to ledoerr for reporting this
+\n * changed to standard preference view
+\n * changed paths are now clickable and open the most recent version in the browser (donate only)
+\n
+\n0.8.1 - 2010.04.09
+\n * removed some unneeded files, minor spelling fixes	
+\n
+\n0.8.0 - 2010.04.09
+\n * First Release
+    </string>
+</resources>

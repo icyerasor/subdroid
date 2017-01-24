@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="image_padding">4sp</dimen>
+	<dimen name="inputBox">200dip</dimen>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="revisions_limit_array">
+    	<item>15</item>
+    	<item>5</item>
+    	<item>10</item>
+    	<item>20</item>
+    	<item>25</item>
+    	<item>30</item>
+    	<item>50</item>
+    </string-array>
+    
+    <string-array name="update_interval_array_values">
+    	<item>15</item>
+    	<item>30</item>
+    	<item>60</item>
+    	<item>720</item>
+    	<item>1440</item>
+    	<item>5</item>
+    	<item>10</item>
+    	<item>45</item>
+    	<item>120</item>
+    	<item>180</item>
+    	<item>240</item>
+    	<item>300</item>
+    </string-array>
+
+	<string-array name="update_interval_array_entries">
+    	<item>15 min</item>
+    	<item>30 min</item>
+    	<item>hourly</item>
+    	<item>half daily</item>
+    	<item>daily</item>
+    	<item>5 min</item>
+    	<item>10 min</item>
+    	<item>45 min</item>
+    	<item>2 hrs</item>
+    	<item>3 hrs</item>
+    	<item>4 hrs</item>
+    	<item>5 hrs</item>	
+	</string-array>
+	
+	<string-array name="theme_array">
+		<item>Light</item>
+		<item>Light - bigger revision text</item>
+		<item>Light - no highlight</item>
+		<item>Black</item>
+	</string-array>
+</resources>

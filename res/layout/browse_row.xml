@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/browse_row_layout">
+    	
+<RelativeLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	
+	<TextView android:id="@+id/browse_revisionString"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingRight="1sp"
+	    android:text="@string/revision" />
+	<TextView android:id="@+id/browse_revision"
+	    android:layout_width="wrap_content"
+	    android:minWidth="30dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/browse_revisionString"
+	    style="@style/revisionNumber" />
+
+	<TextView android:id="@+id/browse_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8sp"
+	    android:layout_toRightOf="@id/browse_revision" 
+	    style="@style/revisionDate" />
+	    
+	<TextView android:id="@+id/browse_author"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8sp" 
+	    android:layout_toRightOf="@id/browse_date" 
+	    android:gravity="right"
+	    style="@style/revisionAuthor" />
+	    
+</RelativeLayout>
+
+	<TextView android:id="@+id/browse_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="@style/repoRowText" />
+
+</LinearLayout>

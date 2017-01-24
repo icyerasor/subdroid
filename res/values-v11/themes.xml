@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- #A9218E -->
+	<style name="ThemeLight" parent="@android:style/Theme.Holo.Light">
+		<item name="highlightedTextColor">?android:attr/colorActivatedHighlight</item>
+		<item name="dividerColor">@android:drawable/divider_horizontal_bright</item>
+		<item name="myBackgroundColor">@android:color/background_light</item>
+		<item name="linkTextDefault">?android:attr/textColorPrimary</item>
+		<item name="linkTextPressed">?android:attr/textColorPrimary</item>
+		<item name="revisionTextSize">12dp</item>
+	</style>
+	<style name="ThemeLightBigger" parent="@android:style/Theme.Holo.Light">
+		<item name="highlightedTextColor">?android:attr/colorActivatedHighlight</item>
+		<item name="dividerColor">@android:drawable/divider_horizontal_bright</item>
+		<item name="myBackgroundColor">@android:color/background_light</item>
+		<item name="linkTextDefault">?android:attr/textColorPrimary</item>
+		<item name="linkTextPressed">?android:attr/textColorPrimary</item>
+		<item name="revisionTextSize">18dp</item>
+	</style>
+	<style name="ThemeLightNoGreen" parent="@android:style/Theme.Holo.Light">
+		<item name="highlightedTextColor">?android:attr/textColorPrimary</item>
+		<item name="dividerColor">@android:drawable/divider_horizontal_bright</item>
+		<item name="myBackgroundColor">@android:color/background_light</item>
+		<item name="linkTextDefault">?android:attr/textColorPrimary</item>
+		<item name="linkTextPressed">?android:attr/textColorPrimary</item>
+		<item name="revisionTextSize">12dp</item>
+	</style>
+	<style name="ThemeBlack" parent="@android:style/Theme.Holo">
+		<item name="highlightedTextColor">?android:attr/colorActivatedHighlight</item>
+		<!-- @android:drawable/divider_horizontal_dark is fucked up, almost invisible when not fullbrightness -->
+		<item name="dividerColor">#555</item>
+		<item name="myBackgroundColor">#000000</item>
+		<item name="linkTextDefault">?android:attr/textColorPrimary</item>
+		<item name="linkTextPressed">?android:attr/textColorHighlight</item>
+		<item name="revisionTextSize">12dp</item>
+	</style>
+</resources>

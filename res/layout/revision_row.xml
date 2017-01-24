@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/revision_row_layout"
+    	android:paddingTop="4dp"
+    	android:paddingBottom="4dp">
+    	
+<RelativeLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	
+	<TextView android:id="@+id/revision_revisionString"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingRight="1sp"
+	    android:text="@string/revision" />
+	<TextView android:id="@+id/revision_revision"
+	    android:layout_width="wrap_content"
+	    android:minWidth="30dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/revision_revisionString"
+	    style="@style/revisionNumber" />
+	    
+	<LinearLayout android:id="@+id/revision_actions" 
+		android:orientation="horizontal" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/revision_revision">
+		
+		<ImageView android:id="@+id/revision_modified"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/modified" />		
+		<ImageView android:id="@+id/revision_added"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/added" />
+		<ImageView android:id="@+id/revision_deleted"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/deleted" />
+		<ImageView android:id="@+id/revision_replaced"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/replaced" />		    
+	</LinearLayout>	    
+
+	<TextView android:id="@+id/revision_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8sp"
+	    android:layout_toRightOf="@id/revision_actions" 
+	    style="@style/revisionDate" />/>
+	    
+	<TextView android:id="@+id/revision_author"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8sp" 
+	    android:layout_toRightOf="@id/revision_date" 
+	    android:gravity="right"
+	    style="@style/revisionAuthor" />
+	    
+</RelativeLayout>
+
+	<TextView android:id="@+id/revision_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    style="@style/revisionText" />
+
+	<TextView android:id="@+id/revision_fk_repo_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" />
+</LinearLayout>

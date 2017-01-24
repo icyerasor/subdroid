@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="myBackground">
+		<item name="android:windowBackground">?myBackgroundColor</item>
+		<item name="android:colorBackground">?myBackgroundColor</item>
+		<item name="android:colorForeground">?myBackgroundColor</item>
+		<item name="android:background">?myBackgroundColor</item>
+	</style>
+	<style name="repoRowText" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">30sp</item>
+		<item name="android:textColor">?highlightedTextColor</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="revisionNumber" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">?highlightedTextColor</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="revisionDate" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<style name="revisionAuthor" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<style name="revisionText" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">?revisionTextSize</item>
+	</style>
+	
+	<style name="pathTextLinked" parent="@android:style/TextAppearance">
+		<item name="android:typeface">sans</item>
+		<item name="android:textSize">?revisionTextSize</item>
+		<item name="android:textColor">?linkTextDefault</item>
+		<item name="android:textColorHighlight">?linkTextPressed</item>
+		<item name="android:textColorLink">?linkTextPressed</item>
+	</style>
+	
+	<style name="repoEditColumnOne" parent="@android:style/TextAppearance">
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:paddingLeft">2sp</item>
+	</style>
+	
+	<style name="prefsColumnOne" parent="@android:style/TextAppearance">
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:paddingLeft">2sp</item>
+	</style>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/pref_category_theme">
+		<ListPreference android:title="@string/theme"
+		android:summary="@string/theme_text"
+		android:key="theme" android:defaultValue="dark"
+		android:entries="@array/theme_array" android:entryValues="@array/theme_array"/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_category_update_service">
+	<com.feldschmid.subdroid.pref.TextPreference />
+	
+	<CheckBoxPreference android:title="@string/notification_show_lights"
+		android:summary="@string/notification_show_lights_text"
+		android:key="show_lights" android:defaultValue="false"/>
+		
+	<CheckBoxPreference android:title="@string/notification_default_sound"
+		android:summary="@string/notification_default_sound_text"
+		android:key="default_sound" android:defaultValue="false"/>
+		
+	<CheckBoxPreference android:title="@string/notification_vibrate"
+		android:summary="@string/notification_vibrate_text"
+		android:key="vibrate" android:defaultValue="false"/>
+		
+	<ListPreference android:title="@string/interval"
+		android:summary="@string/interval_text"
+		android:key="update_interval_str" android:defaultValue="15"
+		android:entries="@array/update_interval_array_entries" android:entryValues="@array/update_interval_array_values" />
+		
+	<com.feldschmid.subdroid.pref.CheckBoxPreferenceWithLongSummary android:title="@string/prefs_battery_friendly"
+		android:summary="@string/prefs_battery_friendly_text"
+		android:key="battery_friendly" android:defaultValue="false"/>
+		
+	<CheckBoxPreference android:title="@string/prefs_show_service_notification"
+	android:summary="@string/prefs_show_service_notification_text"
+	android:key="show_service_notification" android:defaultValue="true"/>
+	
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_category_downloads">
+		<CheckBoxPreference android:title="@string/open_after_download"
+		android:summary="@string/open_after_download_text"
+		android:key="open_after_download" android:defaultValue="true"/>
+		
+		<CheckBoxPreference android:title="@string/fallback_to_text_mimetype"
+			android:summary="@string/fallback_to_text_mimetype_text"
+			android:key="fallback_to_text_mimetype" android:defaultValue="true"/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_category_browse">
+		<CheckBoxPreference android:title="@string/back_button_navigate"
+		android:summary="@string/back_button_navigate_text"
+		android:key="back_button_navigate" android:defaultValue="true"/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/pref_category_backup">
+		<com.feldschmid.subdroid.pref.BackupPreference android:title="@string/prefs_backup"
+			android:summary="@string/prefs_backup_text" />
+		<com.feldschmid.subdroid.pref.BackupPreference android:title="@string/prefs_restore"
+			android:summary="@string/prefs_restore_text" />
+	</PreferenceCategory>
+</PreferenceScreen>

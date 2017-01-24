@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/revisions_menu">
+		<item android:id="@+id/revisions_menu_refresh" android:orderInCategory="1"
+			android:title="@string/revisions_menu_refresh" android:icon="@drawable/menu_refresh" />
+			
+		<item android:id="@+id/revisions_menu_more_revisions" android:orderInCategory="1"
+			android:title="@string/revisions_menu_more_revisions" android:icon="@android:drawable/ic_menu_more" />
+		
+		<item android:id="@+id/revisions_menu_clear" android:orderInCategory="1"
+			android:title="@string/revisions_menu_clear" android:icon="@android:drawable/ic_menu_delete" />
+	</group>
+</menu>

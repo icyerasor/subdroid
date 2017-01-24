@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:scrollbarStyle="outsideInset"
+    style="@style/myBackground" >
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:isScrollContainer="true" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/name"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/name"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/url"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/url"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/default_url"
+			android:hint="@string/url_hint"
+			android:inputType="textUri" />
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/path"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/path"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/default_path"
+			android:hint="@string/path_hint"
+			android:inputType="textUri" />
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/user"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/user"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pass"
+			style="@style/repoEditColumnOne" />
+		<EditText android:inputType="textPassword"
+		  android:id="@+id/pass"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/remember_pass"
+			style="@style/repoEditColumnOne" />
+		<CheckBox android:id="@+id/remember_pass" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/repoEditColumnOne"
+			android:checked="true" />
+	</TableRow>	
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/ignoreSSL"
+			style="@style/repoEditColumnOne" />
+		<CheckBox android:id="@+id/ignoreSSL" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/repoEditColumnOne" />
+	</TableRow>	
+
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/retrieveChangedPaths"
+			style="@style/repoEditColumnOne" />
+		<CheckBox android:id="@+id/retrieveChangedPaths"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true" />
+	</TableRow>		
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/revisions_limit"
+			style="@style/repoEditColumnOne" />
+		<Spinner android:id="@+id/revisions_limit"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:entries="@array/revisions_limit_array" 
+			android:layout_weight="1" />
+	</TableRow>	
+	
+	<TableRow android:visibility="gone">
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/interval"
+			style="@style/repoEditColumnOne" />
+			
+		<EditText android:id="@+id/interval"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/notification"
+			style="@style/repoEditColumnOne" />
+		<CheckBox android:id="@+id/notification"
+			android:checked="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center" />
+	</TableRow>
+	
+	<TableRow >
+		<TextView android:layout_span="2" android:layout_weight="1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/regex_info" style="@style/repoEditColumnOne" />		
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/regex_author"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/regexauthor"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:layout_column="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/regex_message"
+			style="@style/repoEditColumnOne" />
+		<EditText android:id="@+id/regexmessage"
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	</TableRow>
+	
+	<Button android:id="@+id/confirm"
+	  android:text="@string/confirm"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</TableLayout>
+</ScrollView>

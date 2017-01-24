@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		xmlns:myapp="http://schemas.android.com/apk/res/com.feldschmid.subdroid"
+		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" android:orientation="vertical"
+    	style="@style/myBackground" >
+
+<ScrollView android:layout_width="fill_parent"
+    	android:layout_height="0dip" android:layout_weight="1">
+<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/about_layout">
+    	
+	<com.admob.android.ads.AdView android:id="@+id/about_ad"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
+		myapp:secondaryTextColor="#CCCCCC" />
+
+  	<TextView android:id="@+id/help_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_weight="1"
+		android:padding="10sp"
+		android:text="@string/help_message"/>
+</LinearLayout>
+</ScrollView>
+
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:orientation="horizontal" 
+		android:paddingTop="10sp" android:gravity="bottom" style="@style/myBackground">
+		<Button android:id="@+id/about_close"
+			android:text="@string/close"
+			android:layout_weight="1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<Button android:id="@+id/about_feedback"
+			android:text="@string/feedback"
+			android:layout_weight="1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

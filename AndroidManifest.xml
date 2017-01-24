@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.feldschmid.subdroid"
+      android:versionCode="18"
+      android:versionName="0.9.6"
+      android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4" />
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:anyDensity="true" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Subdroid"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".RepositoryEdit"/>
+		<activity android:name=".Revisions">
+		<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name=".Browse"/>
+		<activity android:name=".pref.Prefs"/>
+		<activity android:name=".About"/>
+		<service android:name=".service.CheckUpdateService"/>
+		<activity android:name="com.admob.android.ads.AdMobActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" /> 
+		
+		<meta-data android:name="android.app.default_searchable" android:value=".Revisions" />
+		<meta-data android:value="a14bba9170cd78a" android:name="ADMOB_PUBLISHER_ID" />
+    </application>
+</manifest> 

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/repository_menu">
+		<item android:id="@+id/repository_menu_add" android:orderInCategory="1"
+			android:title="@string/repository_menu_add" android:icon="@android:drawable/ic_menu_add"/>
+		<item android:id="@+id/repository_menu_start_check_update_service" android:orderInCategory="2"
+			android:title="@string/repository_menu_start_check_update_service" />
+		<item android:id="@+id/repository_menu_stop_check_update_service" android:orderInCategory="2"
+			android:title="@string/repository_menu_stop_check_update_service" />
+		<item android:id="@+id/repository_menu_prefs" android:orderInCategory="3"
+			android:title="@string/repository_menu_prefs" android:icon="@android:drawable/ic_menu_preferences" />
+		<item android:id="@+id/repository_menu_search" android:orderInCategory="4"
+			android:title="@string/repository_menu_search" android:icon="@android:drawable/ic_menu_search" />
+		<item android:id="@+id/repository_menu_help" android:orderInCategory="5"
+			android:title="@string/repository_menu_help" android:icon="@android:drawable/ic_menu_help" />
+	</group>
+</menu>

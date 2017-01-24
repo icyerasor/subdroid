@@ -45,14 +45,14 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:src="@drawable/replaced" />		    
-	</LinearLayout>	    
+	</LinearLayout>
 
 	<TextView android:id="@+id/revision_date"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_marginLeft="8sp"
 	    android:layout_toRightOf="@id/revision_actions" 
-	    style="@style/revisionDate" />/>
+	    style="@style/revisionDate" />
 	    
 	<TextView android:id="@+id/revision_author"
 	    android:layout_width="fill_parent"
@@ -66,11 +66,12 @@
 
 	<TextView android:id="@+id/revision_message"
 	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content" 
+	    android:layout_height="wrap_content"
 	    style="@style/revisionText" />
-
+	    
 	<TextView android:id="@+id/revision_fk_repo_id"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:visibility="gone" />
+
 </LinearLayout>

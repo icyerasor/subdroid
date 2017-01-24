@@ -11,18 +11,13 @@
 		android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:id="@+id/about_layout">
-    	
-	<com.admob.android.ads.AdView android:id="@+id/about_ad"
-		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
-		myapp:secondaryTextColor="#CCCCCC" />
 
   	<TextView android:id="@+id/help_text_view"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
         android:layout_weight="1"
 		android:padding="10sp"
-		android:text="@string/help_message"/>
+		android:text="@string/help_message" />
 </LinearLayout>
 </ScrollView>
 

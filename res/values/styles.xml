@@ -6,6 +6,7 @@
 		<item name="android:colorForeground">?myBackgroundColor</item>
 		<item name="android:background">?myBackgroundColor</item>
 	</style>
+
 	<style name="repoRowText" parent="@android:style/TextAppearance">
 		<item name="android:typeface">sans</item>
 		<item name="android:textSize">30sp</item>

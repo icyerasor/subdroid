@@ -8,7 +8,8 @@
 	</PreferenceCategory>
 	
 	<PreferenceCategory android:title="@string/pref_category_update_service">
-	<com.feldschmid.subdroid.pref.TextPreference />
+		
+	<!-- <com.feldschmid.subdroid_donate.pref.TextPreference /> -->
 	
 	<CheckBoxPreference android:title="@string/notification_show_lights"
 		android:summary="@string/notification_show_lights_text"
@@ -27,7 +28,7 @@
 		android:key="update_interval_str" android:defaultValue="15"
 		android:entries="@array/update_interval_array_entries" android:entryValues="@array/update_interval_array_values" />
 		
-	<com.feldschmid.subdroid.pref.CheckBoxPreferenceWithLongSummary android:title="@string/prefs_battery_friendly"
+	<com.feldschmid.subdroid_donate.pref.CheckBoxPreferenceWithLongSummary android:title="@string/prefs_battery_friendly"
 		android:summary="@string/prefs_battery_friendly_text"
 		android:key="battery_friendly" android:defaultValue="false"/>
 		
@@ -54,9 +55,9 @@
 	</PreferenceCategory>
 	
 	<PreferenceCategory android:title="@string/pref_category_backup">
-		<com.feldschmid.subdroid.pref.BackupPreference android:title="@string/prefs_backup"
+		<com.feldschmid.subdroid_donate.pref.BackupPreference android:title="@string/prefs_backup"
 			android:summary="@string/prefs_backup_text" />
-		<com.feldschmid.subdroid.pref.BackupPreference android:title="@string/prefs_restore"
+		<com.feldschmid.subdroid_donate.pref.BackupPreference android:title="@string/prefs_restore"
 			android:summary="@string/prefs_restore_text" />
 	</PreferenceCategory>
 </PreferenceScreen>

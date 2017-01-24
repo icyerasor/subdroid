@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Subdroid</string>
+    <string name="app_name">Subdroid Donated</string>
     
     <string name="default_url"></string>
     <string name="default_path"></string>
@@ -133,6 +133,7 @@
     <string name="feedback">Feedback</string>
     <string name="help_message">
 Subdroid 0.9.5
+\n Donated/Paid Version - Thanks for donating!
 
 \n\n~ About ~
 \n\nSubdroid is a simple frontend to look at SVN-Repositories in your Android device. Currently it only supports view-access to SVN repos and is still in a very early development phase.
@@ -169,7 +170,7 @@ Subdroid 0.9.5
 \n\n~ Changelog ~
 \n
 \n0.9.6 - 2012.04.15
-\n * Fixed bug when browsing directories containing "."s (thx Enrico)
+\n * Fixed bug when browsing directories containing .s (thx Enrico)
 \n * Added Holo Layout
 \n
 \n0.9.5 - 2012.02.05
@@ -195,6 +196,7 @@ Subdroid 0.9.5
 \n * Added search button in the menu to allow devices that do not have an dedicated search button to search.
 \n * Improved search result page.
 \n * Improved notification service, will now use RTC_WAKEUP instead of ELAPSED_REALTIME when not in battery friendly mode.
+\n * Switched to new target-sdk version, needed to explicitly add Permission for WRITE_EXTERNAL_STORAGE
 \n
 \n0.9.0 - 2011.01.08
 \n * Added simple search capabilities. Use the search-key on your device to search for author, commit message, or revision-id in all repositories.
@@ -219,7 +221,7 @@ Subdroid 0.9.5
 \n * Fixed bug that showed changed paths for wrong revision when scrolling.
 \n
 \n0.8.5 - 2010.05.24
-\n * Move Application to sdcard is supported
+\n * Move Application to sdcard is supported for android 2.2. froyo
 \n * Downloaded files are opened (if content-type / mimetype is recognized)
 \n * Opening after downloading / falling back to text-mimetype configurable through preferences
 \n

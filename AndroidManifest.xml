@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.feldschmid.subdroid"
+      package="com.feldschmid.subdroid_donate"
       android:versionCode="18"
       android:versionName="0.9.6"
       android:installLocation="auto">
@@ -33,11 +33,7 @@
 		<activity android:name=".pref.Prefs"/>
 		<activity android:name=".About"/>
 		<service android:name=".service.CheckUpdateService"/>
-		<activity android:name="com.admob.android.ads.AdMobActivity"
-			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-			android:configChanges="orientation|keyboard|keyboardHidden" /> 
 		
 		<meta-data android:name="android.app.default_searchable" android:value=".Revisions" />
-		<meta-data android:value="a14bba9170cd78a" android:name="ADMOB_PUBLISHER_ID" />
     </application>
 </manifest> 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:myapp="http://schemas.android.com/apk/res/com.feldschmid.subdroid"
 		android:orientation="vertical"
 		android:layout_width="fill_parent"
     	android:layout_height="fill_parent">
@@ -18,9 +17,4 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/no_revisions"/>
-        
-	<com.admob.android.ads.AdView android:id="@+id/ad"
-		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
-		myapp:secondaryTextColor="#CCCCCC" />
 </LinearLayout>

@@ -88,7 +88,7 @@
 			android:layout_height="wrap_content"
 			style="@style/repoEditColumnOne"
 			android:checked="true" />
-	</TableRow>	
+	</TableRow>
 	
 	<TableRow>
 		<TextView android:layout_column="1"
